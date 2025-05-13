@@ -90,7 +90,7 @@ elif section == "Add Listing":
         except Exception as e:
             st.error(f"Error: {e}")
 elif section == "Delete Listing":
-    st.header("🗑️ Delete Food Listing")
+    st.header("Delete Food Listing")
 
     listings = pd.read_sql_query("SELECT * FROM food_listings", conn)
     st.subheader("Current Food Listings")
